@@ -19,7 +19,7 @@ namespace OpenAIDemo.Services
         {
             while (true)
             {
-                Console.Write(":: Ask me queastion ^^ ::");
+                Console.Write("::");
                 CompletionCreateResponse result = await _openAIService.Completions.CreateCompletion(new CompletionCreateRequest()
                 {
                     Prompt = Console.ReadLine(),
